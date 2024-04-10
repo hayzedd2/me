@@ -14,8 +14,8 @@ const HeroSection = () => {
             <span className=" bg-[#ebecfe] font-[600] text-[#6c44f9] py-[0.1rem] text-[0.9rem] px-[0.5rem] rounded-[0.5rem]">
               Azeez Alhameen
             </span>
-             ,creative frontend developer with a zeal for translating
-            ideas into beautiful, functional websites, I'm dedicated to
+            . I&apos;m a creative frontend developer with a zeal for translating
+            ideas into beautiful, functional websites, I&apos;m  dedicated to
             enhancing user experiences through code.
           </p>
         </div>
