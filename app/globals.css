@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.work{
+  padding: 5px 16px 5px 16px;
+  box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.6875px #00000024, 0 2.414506143104518px 2.414506143104518px -1.375px #0002, 0 6.382653521484461px 6.382653521484461px -2.0625px #00000021, 0 20px 20px -2.75px #0000001d;
+  color: rgb(255, 255, 255);;
+}
+.tech{
+  box-shadow: 0 0.7961918735236395px 0.7961918735236395px -0.6875px #00000024, 0 2.414506143104518px 2.414506143104518px -1.375px #0002, 0 6.382653521484461px 6.382653521484461px -2.0625px #00000021, 0 20px 20px -2.75px #0000001d;
+  color: rgb(255, 255, 255);;
+}
+
+.toolbar{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.skills{
+  color: rgb(145, 145, 145);
+  border: 1px solid #d9d9d9;
+}
