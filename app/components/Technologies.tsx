@@ -5,7 +5,6 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { TbBrandNextjs } from "react-icons/tb";
 import { GrCss3 } from "react-icons/gr";
 import { RiJavascriptLine } from "react-icons/ri";
-import { TbBrandTailwind } from "react-icons/tb";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { TbBrandPrisma } from "react-icons/tb";
 import { TbBrandDjango } from "react-icons/tb";

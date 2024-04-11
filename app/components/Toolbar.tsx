@@ -5,8 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Toolbar = () => {
   return (
-    <nav className='w-full flex items-center justify-center'>
-        <div  className="fixed w-44 h-[3.2rem] bg-white flex text-[1.2rem] gap-[1.35rem]  items-center justify-center toolbar rounded-[9999px] bottom-10">
+    <nav className='w-full flex xl:items-center sm:items-end xl:justify-center sm:justify-end'>
+        <div  className="fixed xl:w-44 sm:w-[9.5rem] h-[3.2rem] bg-white flex text-[1.2rem] xl:gap-[1.35rem] sm:gap-[1.2rem]  items-center justify-center toolbar rounded-[7000px] sm:bottom-6 xl:bottom-10">
             <a href=""><FaGithub/></a>
             <a href=""><IoLogoLinkedin className='text-[1.5rem]'/></a>
             <a href=""><FaXTwitter/></a>
