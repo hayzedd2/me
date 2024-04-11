@@ -6,6 +6,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { GrCss3 } from "react-icons/gr";
 import { RiJavascriptLine } from "react-icons/ri";
 import { TbBrandTailwind } from "react-icons/tb";
+import { TbBrandPrisma } from "react-icons/tb";
+import { TbBrandDjango } from "react-icons/tb";
 
 const Technologies = () => {
   return (
@@ -17,31 +19,42 @@ const Technologies = () => {
       </div>
       <div className="my-5 xl:w-[35vw] sm:w-full skills rounded-[0.9rem] flex">
         <div className="col-1 border-r-[#d9d9d9] border-r basis-[50%]">
-          <p className="flex gap-2 items-center text-[#414141] font-[600] xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
+          <p className="flex gap-1 items-center text-black font-[500] xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
             <TbBrandHtml5 className="text-[1.4rem] " /> Html5
           </p>
-          <p className="flex gap-2 items-center  text-[#414141] font-[600]  xl:px-10 sm:px-6 py-[1.3rem] border-b-[#d9d9d9] border-b ">
+          <p className="flex gap-1 items-center  text-black font-[500]  xl:px-10 sm:px-6 py-[1.3rem] border-b-[#d9d9d9] border-b ">
             <TbBrandTypescript className="text-[1.25rem]" />
             Typescript
           </p>
-          <p className="flex gap-2 items-center  text-[#414141] font-[600]  xl:px-10 sm:px-6 py-[1.3rem] ">
-            <TbBrandTailwind className="text-[1.25rem]" />
-            Tailwind-Css
-          </p>
-        </div>
-        <div className="col-1 basis-[50%]">
-          <p className="flex gap-2 items-center  text-[#414141] font-[600]  xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
-            <GrCss3 className="text-[1.25rem]" />
-            Css3
-          </p>
-          <p className="flex gap-2 items-center text-[#414141] font-[600]  xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
-            <TbBrandNextjs className="text-[1.4rem] " />
-            Nextjs
-          </p>
-          <p className="flex gap-2 items-center text-[#414141] font-[600]  xl:px-10 sm:px-6 py-[1.3rem] ">
+          <p className="flex gap-1 items-center text-black font-[500]  xl:px-10 sm:px-6 py-[1.3rem] border-b-[#d9d9d9] border-b ">
             <RiJavascriptLine className="text-[1.4rem] " />
             Javascript
           </p>
+          <p className="flex gap-1 items-center  text-black font-[500] xl:px-10 sm:px-6 py-[1.3rem] ">
+            <TbBrandDjango className="text-[1.25rem]" />
+            Django
+          </p>
+         
+        </div>
+        <div className="col-1 basis-[50%]">
+          <p className="flex gap-1 items-center  text-black font-[500] xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
+            <GrCss3 className="text-[1.25rem]" />
+            Css3
+          </p>
+          <p className="flex gap-1 items-center text-black font-[500] xl:px-10 sm:px-6 py-[1.3rem]  border-b-[#d9d9d9] border-b">
+            <TbBrandNextjs className="text-[1.4rem] " />
+            Nextjs
+          </p>
+          <p className="flex gap-1 items-center  text-black font-[500] xl:px-10 sm:px-6 py-[1.3rem] border-b-[#d9d9d9] border-b  ">
+            <TbBrandTailwind className="text-[1.25rem]" />
+            Tailwind-Css
+          </p>
+          <p className="flex gap-1 items-center text-black font-[500]  xl:px-10 sm:px-6 py-[1.3rem] ">
+            <TbBrandPrisma className="text-[1.3rem] " />
+            Prisma
+          </p>
+         
+         
         </div>
       </div>
     </section>
