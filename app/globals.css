@@ -48,3 +48,8 @@
   0% { left: -100%; } 
   100% { left: 100%; } /* Slide completely through and offscreen to the right */ 
 }
+.badge{
+  border: 1px solid #1b1c1d;
+  border-radius: 12px;
+  @apply p-[0.07rem] text-[0.85rem] px-2 my-2
+}
