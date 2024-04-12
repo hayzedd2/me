@@ -11,7 +11,7 @@ const HeroSection = () => {
   }
   return (
     <section>
-      <div className="pt-16">
+      <div className="pt-16 mt-10">
         <div className={open_Sans.className}>
           <h1 className="text-[2rem] font-[500]">Frontend engineer</h1>
         </div>
