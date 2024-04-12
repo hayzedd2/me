@@ -12,10 +12,10 @@ import { TbBrandDjango } from "react-icons/tb";
 const Technologies = () => {
   return (
     <section>
-      <div className="heading pt-10">
-        <h1 className="text-[0.85rem] py-1 bg-[#1b1c1d] tech gap-[0.18rem] w-[7rem] rounded-[5px] flex items-center justify-center">
+      <div className="heading pt-3">
+        {/* <h1 className="text-[0.85rem] py-1 bg-[#1b1c1d] tech gap-[0.18rem] w-[7rem] rounded-[5px] flex items-center justify-center">
           Technologies <VscTriangleRight className=" font-[700] " />
-        </h1>
+        </h1> */}
         <p className="py-2 font-[500] underline underline-offset-2">
           Some of the Technologies i work with
         </p>
