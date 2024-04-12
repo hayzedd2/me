@@ -20,8 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
-        <Analytics />
+        
         {children}
+        <Analytics />
       </body>
     </html>
   );
