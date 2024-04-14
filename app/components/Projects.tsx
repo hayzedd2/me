@@ -74,7 +74,7 @@ const Projects = () => {
           </a>
         </div>
         <div className="project mb-6">
-          <h2 className="font-[600] text-[1.4rem]">Habeeb's portfolio</h2>
+          <h2 className="font-[600] text-[1.4rem]">Habeeb&apos;s  portfolio</h2>
           <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
             Habeeb is a product designer . This is a portfolio i built for him ,
             replicating the exact figma design he gave me . It showcases his
