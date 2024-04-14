@@ -1,8 +1,8 @@
 import React from "react";
 import { VscTriangleRight } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Image from "next/image";
-import project1 from "../image/Galileo design.png";
+import LocalFont from "next/font/local";
+const myfont = LocalFont({ src: "../fonts/test-epicene-text-medium.woff2" });
 const Projects = () => {
   return (
     <section>
@@ -16,8 +16,8 @@ const Projects = () => {
       </div>
       <div className="project-body py-2">
         <div className="project">
-          <h2 className="font-[600] text-[1.4rem]">WishGenie</h2>
-          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+          <h2 className={`${myfont.className} text-[1.4rem]`}>WishGenie</h2>
+          <p className={`xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 `}>
             A web application that allows user rant about their wish , create
             one and have the ability to manage it . Also giving room for
             philanthropists to explore and reach out to wishers regarding their
@@ -47,8 +47,8 @@ const Projects = () => {
           </a>
         </div>
         <div className="project py-5">
-          <h2 className="font-[600] text-[1.4rem]">RestCountries</h2>
-          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+          <h2  className={`${myfont.className} text-[1.4rem]`}>RestCountries</h2>
+          <p className={`xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 `}>
             Rest countries is a web application that allows users to get
             information about any country , see all countries and also search
             for countries.
@@ -68,14 +68,14 @@ const Projects = () => {
           <a
             href="https://restcountries-tau.vercel.app/"
             target="_blank"
-            className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
+            className="text-[0.85rem] w-[8rem] py-2  bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
           >
             Visit Website <IoIosArrowRoundForward className="text-[1rem]" />
           </a>
         </div>
         <div className="project mb-6">
-          <h2 className="font-[600] text-[1.4rem]">Habeeb&apos;s  portfolio</h2>
-          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+          <h2  className={`${myfont.className} text-[1.4rem]`}>Habeeb&apos;s portfolio</h2>
+          <p className={`xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 `}>
             Habeeb is a product designer . This is a portfolio i built for him ,
             replicating the exact figma design he gave me . It showcases his
             case studies , skills , experience , certfications and all that.
