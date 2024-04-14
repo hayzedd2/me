@@ -15,34 +15,93 @@ const Projects = () => {
         </p>
       </div>
       <div className="project-body py-2">
-        <h2 className="font-[600] text-[1.4rem]">WishGenie</h2>
-        <p className={`leading-[30px] max-w-[36rem] mt-2 `}>
-          A web application that allows user rant about their wish , create one
-          and have the ability to manage it . Also giving room for
-          philanthropists to explore and reach out to wishers regarding their
-          wish.
-        </p>
-        <div className="tags flex gap-2">
-          <div className="badge">
-            <p>NextJs</p>
+        <div className="project">
+          <h2 className="font-[600] text-[1.4rem]">WishGenie</h2>
+          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+            A web application that allows user rant about their wish , create
+            one and have the ability to manage it . Also giving room for
+            philanthropists to explore and reach out to wishers regarding their
+            wish.
+          </p>
+          <div className="tags flex gap-2 flex-wrap">
+            <div className="badge">
+              <p>NextJs</p>
+            </div>
+            <div className="badge">
+              <p>Typescript</p>
+            </div>
+            <div className="badge">
+              <p>Supabase</p>
+            </div>
+            <div className="badge">
+              <p>Prisma</p>
+            </div>
           </div>
-          <div className="badge">
-            <p>Typescript</p>
-          </div>
-          <div className="badge">
-            <p>Supabase</p>
-          </div>
-          <div className="badge">
-            <p>Prisma</p>
-          </div>
+          <a
+            href="https://wish-genie.vercel.app/"
+            target="
+            _blank"
+            className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
+          >
+            Visit Website <IoIosArrowRoundForward className="text-[1rem]" />
+          </a>
         </div>
-        {/* <Image src={project1} width={300} height={300} alt="projects"/> */}
-        <a
-          href=""
-          className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
-        >
-          Visit Website <IoIosArrowRoundForward className="text-[1rem]" />
-        </a>
+        <div className="project py-5">
+          <h2 className="font-[600] text-[1.4rem]">RestCountries</h2>
+          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+            Rest countries is a web application that allows users to get
+            information about any country , see all countries and also search
+            for countries.
+          </p>
+          <div className="tags flex gap-2 flex-wrap">
+            <div className="badge">
+              <p>React</p>
+            </div>
+          
+            <div className="badge">
+              <p>Chakra UI</p>
+            </div>
+            <div className="badge border">
+              <p>RestCountries API</p>
+            </div>
+          </div>
+          <a
+            href="https://restcountries-tau.vercel.app/"
+            target="_blank"
+            className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
+          >
+            Visit Website <IoIosArrowRoundForward className="text-[1rem]" />
+          </a>
+        </div>
+        <div className="project mb-6">
+          <h2 className="font-[600] text-[1.4rem]">Habeeb's portfolio</h2>
+          <p className={`leading-[30px] max-w-[45rem] mt-2 `}>
+            Habeeb is a product designer . This is a portfolio i built for him ,
+            replicating the exact figma design he gave me . It showcases his
+            case studies , skills , experience , certfications and all that.
+          </p>
+          <div className="tags flex gap-2 flex-wrap">
+            <div className="badge">
+              <p>React</p>
+            </div>
+            <div className="badge">
+              <p>Javascript</p>
+            </div>
+            <div className="badge">
+              <p>Tailwind-Css</p>
+            </div>
+          </div>
+          <a
+            href="https://habeeb-azeez.vercel.app/"
+            target="_blank"
+            className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
+          >
+            Visit Website <IoIosArrowRoundForward className="text-[1rem]" />
+          </a>
+        </div>
+        <span className=" bg-[#ebecfe] font-[500] text-[#7457df] py-[0.2rem] text-[0.9rem] px-[1rem] rounded-[0.6rem]">
+          More projects coming soon!
+        </span>
       </div>
     </section>
   );

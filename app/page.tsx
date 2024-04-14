@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection'
 import Technologies from "./components/Technologies";
 import Toolbar from "./components/Toolbar";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <HeroSection/>
       <Technologies/>
       <Projects/>
+      <Contact/>
       <Toolbar/>
+
     </main>
   );
 }
