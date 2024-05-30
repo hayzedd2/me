@@ -5,7 +5,7 @@ const josefin = Josefin_Sans({ subsets: ["latin"] });
 
 const Navbar = () => {
   return (
-    <nav className="xl:min-w-[55rem] sm:min-w-full xl:pr-0 sm:pr-10 fixed top-0 pt-10 bg-white flex items-center justify-between">
+    <nav className="xl:min-w-[55rem]  sm:min-w-full xl:pr-0 sm:pr-10 fixed top-0 pt-10 bg-white flex items-center justify-between">
       <div className={josefin.className}>
         <h1 className="text-[1.7rem] font-[600]">Az</h1>
       </div>

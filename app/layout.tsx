@@ -16,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
-        
         {children}
         <Analytics />
       </body>
