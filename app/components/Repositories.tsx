@@ -98,7 +98,7 @@ const Respositories = () => {
           <p
             className={`xl:leading-[30px] xl:text-[1.05rem] sm:text-base  sm:leading-[27px] max-w-[45rem] mt-2 `}
           >
-           Check here for fun stuffs. Just a repo to document for interaction journey
+           Check here for fun stuffs. Just a repo to document my interaction journey
           </p>
           <div className="tags flex gap-2 flex-wrap">
             <div className="badge">
