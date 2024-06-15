@@ -31,13 +31,13 @@ const Projects = () => {
     <section>
       <div className="heading pt-8">
         <h1 className="text-[0.85rem] py-1 bg-[#1b1c1d] tech gap-[0.18rem] w-[5.5rem] rounded-[5px] flex items-center justify-center">
-          Projects <VscTriangleRight className=" font-[700] " />
+          Projects <VscTriangleRight className="font-[700] " />
         </h1>
         <p className="py-2 font-[400] underline underline-offset-2">
           My recent Projects
         </p>
       </div>
-      <div className="project-body py-2 flex flex-col gap-4">
+      <div className="project-body py-2 flex flex-col gap-5">
         {projectArray.map((project, index) => {
           return (
             <div className="project" key={index}>
@@ -51,7 +51,7 @@ const Projects = () => {
                 <GoArrowUpRight />
               </a>
               <p
-                className={`xl:leading-[30px] sm:leading-[27px] text-[1.1rem]  max-w-[45rem] mt-2 `}
+                className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.05rem] sm:text-[1.02rem]"
               >
                 {project.projectDescription}
               </p>
