@@ -1,11 +1,7 @@
 "use client";
 
 import React from "react";
-// import { Open_Sans } from "next/font/google";
-
-// const open_Sans = Open_Sans({ subsets: ["latin"], style: "italic" });
 import { useState } from "react";
-import { BsCursorFill } from "react-icons/bs";
 import { HiOutlineCursorClick } from "react-icons/hi";
 const HeroSection = () => {
   const [open, setOpen] = useState(false);
