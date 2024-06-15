@@ -37,14 +37,14 @@ const Projects = () => {
               <p>Prisma</p>
             </div>
           </div>
-          <a
+          {/* <a
             href="https://wish-genie.vercel.app/"
             target="
             _blank"
             className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
           >
             Visit Website <IoIosArrowRoundForward className="text-[1rem] mt-[0.1rem]" />
-          </a>
+          </a> */}
         </div>
         <div className="project">
           <h2  className={`${myfont.className} text-[1.4rem]`}>Habeeb&apos;s portfolio</h2>
@@ -64,13 +64,13 @@ const Projects = () => {
               <p>Tailwind-Css</p>
             </div>
           </div>
-          <a
+          {/* <a
             href="https://habeeb-azeez.vercel.app/"
             target="_blank"
             className="text-[0.85rem] w-[8rem] py-2 bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
           >
             Visit Website <IoIosArrowRoundForward className="text-[1rem] mt-[0.1rem]" />
-          </a>
+          </a> */}
         </div>
         <div className="project">
           <h2  className={`${myfont.className} text-[1.4rem]`}>RestCountries</h2>
@@ -91,13 +91,13 @@ const Projects = () => {
               <p>RestCountries API</p>
             </div>
           </div>
-          <a
+          {/* <a
             href="https://restcountries-tau.vercel.app/"
             target="_blank"
             className="text-[0.85rem] w-[8rem] py-2  bg-[#1b1c1d] tech gap-[0.18rem] my-3 rounded-[5px] flex items-center justify-center"
           >
             Visit Website <IoIosArrowRoundForward className="text-[1rem] mt-[0.1rem]" />
-          </a>
+          </a> */}
         </div>
         
         {/*  */}

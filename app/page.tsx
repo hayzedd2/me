@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Respositories from "./components/Repositories";
 export default function Home() {
   return (
-    <main className="max-w-[40rem] px-5 mx-auto py-10 relative min-h-screen">
+    <main className="max-w-[40rem] text-[#3a3a3a] px-5 mx-auto py-10 relative min-h-screen">
       <Navbar />
       <HeroSection />
       <Technologies />

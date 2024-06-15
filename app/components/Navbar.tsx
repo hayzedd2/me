@@ -4,8 +4,8 @@ import { Josefin_Sans } from "next/font/google";
 const josefin = Josefin_Sans({ subsets: ["latin"] });
 
 const Navbar = () => {
-  return (
-    <nav className="xl:min-w-[40rem]  sm:min-w-full xl:pr-0 sm:pr-10 fixed top-0 pt-10 bg-white flex items-center justify-between">
+  return ( 
+    <nav className="navh xl:min-w-[40rem] backdrop-blur-md bg-white/30  sm:min-w-full xl:pr-0 sm:pr-10 fixed top-0 pt-10  flex items-center justify-between z-50">
       <div className={josefin.className}>
         <h1 className="text-[1.7rem] font-[600]">Az</h1>
       </div>
