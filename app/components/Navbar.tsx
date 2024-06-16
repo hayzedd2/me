@@ -11,15 +11,12 @@ const Navbar = () => {
         <h1 className="text-[1.7rem] font-[600]">Az</h1>
       </div>
 
-      <div className="bg-[#1b1c1d] shiny-button hover:translate-y-[-2px] cursor-pointer transition-all p-1 rounded-[50px] text-[0.75rem] work">
-        <a
-          href="mailto:azeezalhameen@gmail.com"
-          className="flex items-center gap-1"
-        >
+      <a className="bg-[#1b1c1d] shiny-button flex items-center gap-1 hover:translate-y-[-2px] cursor-pointer transition-all p-1 rounded-[50px] text-[0.75rem] work" href="mailto:azeezalhameen@gmail.com">
+        {/* <a */}
           Available for work
           <FaAngleRight className="text-[#99999a] font-[700] " />
-        </a>
-      </div>
+        {/* </a> */}
+      </a>
       </nav>
     </div>
   );
