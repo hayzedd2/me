@@ -20,7 +20,7 @@ const Respositories = () => {
     {
       projectName: "My playground",
       projectDescription:
-        "Check here for fun stuffs. Just a repo to document my interaction journey.",
+        "I try to create mini-web interactions with my free time. See this repo for some of them(Framer motion), documenting my interaction journey.",
       projectSkills: ["Framer-motion", "Typescript"],
       projectLevel: "New",
       projectLink: "https://github.com/hayzedd2/My-playground/",
