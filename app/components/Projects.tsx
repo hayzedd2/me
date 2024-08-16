@@ -6,11 +6,11 @@ import { GoArrowUpRight } from "react-icons/go";
 const Projects = () => {
   const projectArray = [
     {
-      projectName: "WishGenie",
+      projectName: "PicToPlate",
       projectDescription:
-        "A web application that allows user rant about their wish, create one and have the ability to manage it Also giving room for philanthropists to explore and reach out to wishers regarding their wish.",
-      projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma"],
-      projectLink: "https://wish-genie.vercel.app/",
+        "A web application that allows a user upload a picture of a dish, leverages AI to identify the type of dish and then generate cooking instruction on how to prepare the dish. Also generates suggested youtube videos on the meal preparation.",
+      projectSkills: ["Nextjs", "Typescript", "HuggingFace AI", "Meta Llama"],
+      projectLink: "https://pictoplate.vercel.app/",
     },
     {
       projectName: " Habeeb's portfolio",
@@ -19,6 +19,14 @@ const Projects = () => {
       projectSkills: ["Reactjs", "Tailwind-css"],
       projectLink: "https://habeeb-azeez.vercel.app/",
     },
+    {
+      projectName: "WishGenie",
+      projectDescription:
+        "A web application that allows user rant about their wish, create one and have the ability to manage it Also giving room for philanthropists to explore and reach out to wishers regarding their wish.",
+      projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma"],
+      projectLink: "https://wish-genie.vercel.app/",
+    },
+
     {
       projectName: "Restcountries",
       projectDescription:
@@ -50,9 +58,7 @@ const Projects = () => {
                 {project.projectName}
                 <GoArrowUpRight />
               </a>
-              <p
-                className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.05rem] sm:text-[1.02rem]"
-              >
+              <p className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.05rem] sm:text-[1.02rem]">
                 {project.projectDescription}
               </p>
               <div className="tags flex gap-2 flex-wrap">

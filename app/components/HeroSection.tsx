@@ -8,27 +8,30 @@ const HeroSection = () => {
   const onOpen = () => {
     setOpen(!open);
   };
+  // I'm a frontend engineer with extensive experience crafting responsive and intuitive web applications, currently based in [Your City, Country]. With expertise in modern JavaScript frameworks and a keen eye for design implementation, I bring pixel-perfect user interfaces to life. My passion lies in creating performant, accessible, and scalable web solutions that enhance user engagement and drive business growth.
+  // I specialize in translating complex design concepts into clean, efficient code, ensuring seamless interactions across devices and browsers. From startups to large enterprises, I've collaborated with diverse teams to deliver cutting-edge frontend solutions that push the boundaries of web technology. My obsession with code quality, performance optimization, and staying ahead of industry trends allows me to build robust, future-proof applications that users love to interact with.
+
   return (
     <section>
       <div className="pt-16 mt-10">
         <div>
-          <h1 className="text-[2rem] font-[00] italic ">
-            Frontend engineer
-          </h1>
+          <h1 className="text-[2rem] font-[00] italic ">Frontend engineer</h1>
         </div>
         <div className="xl:max-w-[35rem] sm:max-w-none mt-[12px] xl:text-[1.02rem] sm:text-base  ">
           <p className="leading-[30px]">
             Hi there , I am
             <span className="tag relative">
-               <span className="absolute bottom-[-10px] right-[-10px] text-[1.2rem]"><HiOutlineCursorClick/></span>
+              <span className="absolute bottom-[-10px] right-[-10px] text-[1.2rem]">
+                <HiOutlineCursorClick />
+              </span>
               Azeez Alhameen
             </span>
-            . I&apos;m a creative frontend developer with a zeal for translating
-            ideas into beautiful, functional web-applications.
+            . I&apos;m a creative frontend engineer with extensive experience
+            crafting responsive and intuitive web applications.
           </p>
           <p className="mt-4 leading-[30px]">
-            Pushed by my curiosity, I&apos;ve always loved building things. I
-            enjoy crafting user-centered interface through code.{" "}
+            My passion lies in creating performant, accessible, and scalable web
+            solutions that enhance user engagement and drive business growth.
             {!open ? (
               <span
                 onClick={onOpen}
@@ -42,10 +45,10 @@ const HeroSection = () => {
             <p className="mt-4 leading-[30px]">
               What sets me apart as a frontend developer is my commitment to
               user-centered design and my ability to collaborate effectively
-              within cross-functional teams. When you bring me onto your
-              project, you gain a collaborator who is not only a skilled coder
-              but also a creative problem-solver. My goal is to turn your vision
-              into reality and help your project reach new heights.{" "}
+              within cross-functional teams. My obsession with code quality,
+              performance optimization, and staying ahead of industry trends
+              allows me to build robust, future-proof applications that users
+              love to interact with.
               <span
                 onClick={onOpen}
                 className=" cursor-pointer ml-[0.15rem] text-[0.85rem] underline underline-offset-2"

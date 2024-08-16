@@ -11,20 +11,20 @@ const Respositories = () => {
       projectLink: "https://github.com/hayzedd2/RoleBased-Auth/",
     },
     {
+      projectName: "My playground",
+      projectDescription:
+        "I try to create mini-web interactions with my free time. See this repo for some of them(Framer motion), documenting my interaction journey.",
+      projectSkills: ["Framer-motion", "Typescript"],
+      projectLink: "https://github.com/hayzedd2/My-playground/",
+    },
+    {
       projectName: "Frontend Go-to template",
       projectDescription:
         "A nextjs Typescript application template for fast-setup of complex web apps. Comes with prisma setup for ORM, Complete setup of clerk auth for authentication , tailwind for styling",
       projectSkills: ["Nextjs", "Typescript" , "Prisma" , "Clerk auth"],
       projectLink: "https://github.com/hayzedd2/Goto-template/",
     },
-    {
-      projectName: "My playground",
-      projectDescription:
-        "I try to create mini-web interactions with my free time. See this repo for some of them(Framer motion), documenting my interaction journey.",
-      projectSkills: ["Framer-motion", "Typescript"],
-      projectLevel: "New",
-      projectLink: "https://github.com/hayzedd2/My-playground/",
-    },
+    
   ];
   return (
     <section>
@@ -47,7 +47,6 @@ const Respositories = () => {
                 className="text-[1.3rem] decoration-[#3a3a3a] underline underline-offset-2 flex items-center gap-[0.15rem]"
               > 
                 {project.projectName}
-                {project.projectLevel ? <span className="tip">{project.projectLevel}</span> : null}
                 <GoArrowUpRight/>
                 
               </a>
