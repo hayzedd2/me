@@ -26,19 +26,11 @@ const Projects = () => {
       projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma"],
       projectLink: "https://wish-genie.vercel.app/",
     },
-
-    {
-      projectName: "Restcountries",
-      projectDescription:
-        " Rest countries is a web application that allows users to get information about any country , see all countries and also search for countries.",
-      projectSkills: ["Reactjs", "Chakra-UI", "Restcountries-API"],
-      projectLink: "https://restcountries-tau.vercel.app/",
-    },
   ];
   return (
     <section>
       <div className="heading pt-8">
-        <h1 className="text-[0.85rem] py-1 bg-[#1b1c1d] tech gap-[0.18rem] w-[5.5rem] rounded-[5px] flex items-center justify-center">
+        <h1 className="text-[0.85rem] py-1 bg-[#1b1c1d] tech bx-shadow gap-[0.18rem] w-[5.5rem] rounded-[5px] flex items-center justify-center">
           Projects <VscTriangleRight className="font-[700] " />
         </h1>
         <p className="py-2 font-[400] underline underline-offset-2">
@@ -53,23 +45,14 @@ const Projects = () => {
                 href={project.projectLink}
                 target="
             _blank"
-                className="text-[1.3rem] decoration-[#3a3a3a] underline underline-offset-2 flex items-center gap-[0.15rem]"
+                className="text-[1.2rem]  text-gray-800 underline underline-offset-2 flex items-center"
               >
                 {project.projectName}
-                <GoArrowUpRight />
+                <GoArrowUpRight className="h-4 flex mt-[3px]" />
               </a>
-              <p className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.05rem] sm:text-[1.02rem]">
+              <p className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.07rem] sm:text-[1.05rem]">
                 {project.projectDescription}
               </p>
-              <div className="tags flex gap-2 flex-wrap">
-                {project.projectSkills.map((skills, index) => {
-                  return (
-                    <div className="badge" key={index}>
-                      <p>{skills}</p>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
           );
         })}
