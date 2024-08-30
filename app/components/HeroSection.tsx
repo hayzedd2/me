@@ -13,19 +13,22 @@ const HeroSection = () => {
       <div className="pt-10 mt-10">
         <div>
           <h1 className="text-[2rem]">Frontend engineer</h1>
-          <h6 className="text-[1.1rem] text-gray-400">Azeez Alhameen</h6>
+          <h6 className="text-[1.1rem]  text-[#a4a4a3] mt-[-6px]">Azeez Alhameen</h6>
         </div>
-        <div className="xl:max-w-[35rem] sm:max-w-none mt-[16px] xl:text-[1.02rem] sm:text-base  ">
+        <div className="xl:max-w-[35rem] sm:max-w-none mt-[16px] xl:leading-[30px] sm:leading-[27px] xl:text-[1.07rem] sm:text-[1.05rem]  ">
           <p className="leading-[30px]">
-            Hi there, I am
-            Alhameen
-            .I&apos;m a creative frontend engineer with extensive experience
-            crafting responsive and intuitive web applications.
+            Hi there, I am Alhameen .I&apos;m a creative frontend engineer with
+            extensive experience crafting responsive and intuitive web
+            applications.
           </p>
           <p className="mt-4 leading-[30px]">
             On the side, i am also interested in micro interactions.I
             craft/recreate wonderful interactions on the web{" "}
-            <a href="https://azplayground.vercel.app" target="_blank" className="underline underline-offset-2">
+            <a
+              href="https://azplayground.vercel.app"
+              target="_blank"
+              className="underline underline-offset-2"
+            >
               (see my playground)
             </a>
             .
