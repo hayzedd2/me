@@ -1,23 +1,21 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
-import { HiOutlineCursorClick } from "react-icons/hi";
+import { Tangerine } from "next/font/google";
+const tangerine = Tangerine({ weight: "700", display: "swap", subsets:["latin"] });
 const HeroSection = () => {
-  const [open, setOpen] = useState(false);
-  const onOpen = () => {
-    setOpen(!open);
-  };
   return (
     <section>
       <div className="pt-10 mt-10">
         <div>
-          <h1 className="text-[2rem]">Frontend engineer</h1>
-          <h6 className="text-[1.1rem]  text-[#a4a4a3] mt-[-6px]">Azeez Alhameen</h6>
+          <h1 className={`text-[2.6rem]  ${tangerine.className}`}>Frontend engineer</h1>
+          <h6 className="text-[1.1rem]  opacity-70 mt-[-6px]">
+            Azeez Alhameen
+          </h6>
         </div>
         <div className="xl:max-w-[35rem] sm:max-w-none mt-[16px] xl:leading-[30px] sm:leading-[27px] xl:text-[1.07rem] sm:text-[1.05rem]  ">
           <p className="leading-[30px]">
-            Hi there, I am Alhameen .I&apos;m a creative frontend engineer with
+            Hi there, I am Alhameen. I&apos;m a creative frontend engineer with
             extensive experience crafting responsive and intuitive web
             applications.
           </p>

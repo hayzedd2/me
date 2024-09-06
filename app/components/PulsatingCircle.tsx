@@ -9,11 +9,11 @@ interface PulsatingCircleProps {
 }
 
 const PulsatingCircle: React.FC<PulsatingCircleProps> = ({
-  size = 8,
+  size = 7,
   color = '#22c55e'
 }) => {
   return (
-    <div className="relative" style={{ width: size, height: size }}>
+    <div className="relative mt-[-3px]" style={{ width: size, height: size }}>
       <motion.span
         className="absolute inset-0 rounded-full"
         style={{ backgroundColor: color }}

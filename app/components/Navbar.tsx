@@ -11,10 +11,10 @@ const Navbar = () => {
         </div>
 
         <a
-          className="bx-shadow-light  flex items-center gap-2 hover:translate-y-[-2px] cursor-pointer transition-all p-1 rounded-[50px] work"
+          className="bx-shadow-light  text-[0.9rem] flex items-center gap-2 hover:translate-y-[-2px] cursor-pointer transition-all p-[0.175rem] rounded-[50px] work"
           href="mailto:azeezalhameen@gmail.com"
         >
-          <PulsatingCircle />
+          <PulsatingCircle  />
           Available for work
         </a>
       </nav>
