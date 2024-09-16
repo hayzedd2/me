@@ -15,7 +15,7 @@ export default function Home() {
         <Projects />
         <Respositories />
         <Contact />
-        <Toolbar />
+        {/* <Toolbar /> */}
       </main>
     </section>
   );
