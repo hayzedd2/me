@@ -62,7 +62,7 @@ const Contact = () => {
       <div className=" bg-white relative flex text-[0.95rem] font-[500] gap-[1.3rem] items-center justify-center">
         {links.map((link, index) => {
           return (
-            <div className="flex flex-col gap-3 items-center justify-center">
+            <div key={index} className="flex flex-col gap-3 items-center justify-center">
               <span
                 style={{
                   backgroundColor: link.bg,
@@ -75,7 +75,7 @@ const Contact = () => {
               </span>
 
               <a
-                key={index}
+                
                 className={`${hoveredIndex !== null && hoveredIndex !== index
                     ? "opacity-20"
                     : ""
