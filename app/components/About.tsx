@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section>
       <div className="pt-10 mt-10">
-        <img src="/og-image.svg" alt="" />
+        {/* <img src="/og-image.svg" alt="" /> */}
         <div>
           <h1 className={`text-[2.6rem] ${tangerine.className}`}>
             Frontend engineer
