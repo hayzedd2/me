@@ -2,36 +2,13 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { FiGithub } from "react-icons/fi";
-import { IoMail } from "react-icons/io5";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { Links } from "../contents/content";
+
 const Contact = () => {
   const ref = useRef<SVGSVGElement | null>(null);
   const isInView = useInView(ref, { once: false });
   const [hoveredIndex, setHoveredIndex] = useState<null | number>(null);
-  const links = [
-    {
-      name: " Github",
-      icon: <FiGithub />,
-      href: "https://github.com/hayzedd2/",
-      bg: "#0D1117",
-      tilt : "-5deg"
-    },
-    {
-      name: "Linkedin",
-      icon: <FaLinkedinIn className="text-[1.4rem]"/>,
-      href: "http://linkedin.com/in/azeez-alhameen-9a604026a",
-      bg: "#0075B1",
-      tilt : "5deg"
-    },
-    {
-      name: "Mail",
-      icon: <IoMail  className="text-[1.4rem]"/>,
-      href: "mailto:azeezalhameen1@gmail.com",
-      bg: "bg-sky-400 ml-[-20px]",
-      tilt : "-5deg"
-    },
-  ];
+  
   return (
     <section className="py-10 flex  items-center justify-between">
       <svg
@@ -60,9 +37,9 @@ const Contact = () => {
         />
       </svg>
       <div className=" bg-white relative flex text-[0.95rem] font-[500] gap-[1.3rem] items-center justify-center">
-        {links.map((link, index) => {
+        {Links.map((link, index) => {
           return (
-            <div className="flex flex-col gap-3 items-center justify-center">
+            <div key={index} className="flex flex-col gap-3 items-center justify-center">
               <span
                 style={{
                   backgroundColor: link.bg,
@@ -91,16 +68,6 @@ const Contact = () => {
             </div>
           );
         })}
-        {/* 
-        <div className='flex gap-[0.7rem] items-center'>
-          <a href="https://github.com/hayzedd2/">Github</a>
-          <div className="w-1 h-1 rounded-full bg-[#111110]"></div>
-        </div>
-        <div className='flex gap-[0.7rem] items-center'>
-          <a href="http://linkedin.com/in/azeez-alhameen-9a604026a">Linkedin</a>
-          <div className="w-1 h-1 rounded-full bg-[#111110]"></div>
-        </div>
-        <a href="mailto:azeezalhameen1@gmail.com">Mail</a> */}
       </div>
     </section>
   );

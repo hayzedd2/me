@@ -1,14 +1,19 @@
-"use client";
-
 import React from "react";
 import { Tangerine } from "next/font/google";
-const tangerine = Tangerine({ weight: "700", display: "swap", subsets:["latin"] });
-const HeroSection = () => {
+const tangerine = Tangerine({
+  weight: "700",
+  display: "swap",
+  subsets: ["latin"],
+});
+const About = () => {
   return (
     <section>
       <div className="pt-10 mt-10">
+        <img src="/og-image.svg" alt="" />
         <div>
-          <h1 className={`text-[2.6rem]  ${tangerine.className}`}>Frontend engineer</h1>
+          <h1 className={`text-[2.6rem] ${tangerine.className}`}>
+            Frontend engineer
+          </h1>
           <h6 className="text-[1.1rem]  opacity-70 mt-[-6px]">
             Azeez Alhameen
           </h6>
@@ -37,4 +42,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default About;

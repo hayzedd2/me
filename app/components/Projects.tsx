@@ -1,32 +1,9 @@
 import React from "react";
 import { VscTriangleRight } from "react-icons/vsc";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import LocalFont from "next/font/local";
 import { GoArrowUpRight } from "react-icons/go";
+import { projectArray } from "../contents/content";
 const Projects = () => {
-  const projectArray = [
-    {
-      projectName: "PicToPlate",
-      projectDescription:
-        "A web application that allows a user upload a picture of a dish, leverages AI to identify the type of dish and then generate cooking instruction on how to prepare the dish. Also generates suggested youtube videos on the meal preparation.",
-      projectSkills: ["Nextjs", "Typescript", "HuggingFace AI", "Meta Llama"],
-      projectLink: "https://pictoplate.vercel.app/",
-    },
-    {
-      projectName: " Habeeb's portfolio",
-      projectDescription:
-        "Habeeb is a product designer . This is a portfolio i built for him, replicating the exact figma design he gave me. It showcases his casestudies, skills, experience, certfications and all that.",
-      projectSkills: ["Reactjs", "Tailwind-css"],
-      projectLink: "https://habeeb-azeez.vercel.app/",
-    },
-    {
-      projectName: "WishGenie",
-      projectDescription:
-        "A web application that allows user rant about their wish, create one and have the ability to manage it Also giving room for philanthropists to explore and reach out to wishers regarding their wish.",
-      projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma"],
-      projectLink: "https://wish-genie.vercel.app/",
-    },
-  ];
+  
   return (
     <section>
       <div className="heading pt-8">

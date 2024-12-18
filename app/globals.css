@@ -11,7 +11,10 @@
   @apply rounded-[5px] py-1 px-[0.5rem] font-[500] text-[#7457df] border-none mx-1 text-[0.85rem]
 }
 .tip{
-  @apply rounded-[100px] px-[10px] py-[2px] bg-[#EAFCEC] text-[#313134] text-[0.7rem]
+  @apply rounded-[100px] px-[10px] py-[2px] bg-[#EAFCEC] text-[#313134] text-[0.6rem]
+}
+.skillprop{
+  @apply flex gap-1 items-center text-black font-[400] xl:px-10 sm:px-6 py-[1.3rem] 
 }
 .work {
   padding: 5px 16px 5px 16px;
@@ -20,68 +23,10 @@
 .tech {
   color: rgb(255, 255, 255);
 }
-.box-1 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    184deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(254, 254, 255, 1) 0%,
-    rgba(0, 142, 255, 1) 96%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
-.toolbar {
-  box-shadow: 0px 6px 19px 0px #6F788359;
-}
 .skills {
   color: rgb(145, 145, 145);
   border: 1px solid #d9d9d9;
-}
-
-.shiny-button {
-  position: relative;
-  border: none;
-  overflow: hidden;
-}
-
-.shiny-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%; /* Initially offscreen */
-  width: 100%;
-  height: 200%;
-  background: linear-gradient(
-    135deg,
-    transparent 10%,
-    #fff 40%,
-    transparent 90%
-  );
-  transition: left 0.4s ease;
-  animation-name: slide;
-  animation-duration: 2s;
-  animation-direction: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes slide {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  } /* Slide completely through and offscreen to the right */
-}
-.badge {
-  border: 1px solid #707071;
-  @apply rounded-[100px] px-[10px] py-[2px] flex items-center justify-center text-[0.85rem] text-[#313134]
-}
-.visit {
-  color: rgb(255, 255, 255);
-}
-.tags{
-  @apply my-2
 }
 
 .bx-shadow {
@@ -99,3 +44,10 @@
       inset 0px 0px 0px 1px hsla(0, 0%, 100%, 0.1),
       0px 0px 1px 0px rgba(0, 0, 0, 0.5);
   }
+
+  .new-shadow{
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0.5);
+  }
+
+
+  

@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
 
         <a
-          className="bx-shadow-light  text-[0.9rem] flex items-center gap-2 hover:translate-y-[-2px] cursor-pointer transition-all p-[0.175rem] rounded-[50px] work"
+          className="bx-shadow-light  text-[0.9rem] flex items-center gap-2 hover:translate-y-[-2px] cursor-pointer transition-all rounded-[50px] work"
           href="mailto:azeezalhameen@gmail.com"
         >
           <PulsatingCircle  />

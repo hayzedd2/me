@@ -1,31 +1,8 @@
 import React from "react";
 import { VscTriangleRight } from "react-icons/vsc";
 import { GoArrowUpRight } from "react-icons/go";
+import { repositoryArray } from "../contents/content";
 const Respositories = () => {
-  const repositoryArray = [
-    {
-      projectName: "Role-Based auth",
-      projectDescription:
-        "Advanced authentication system for a Nextjs app.A role-based access control system to ensure secure authorization. It includes sign-up and login functionality, O-auth, 2FA, email verification, password reset.",
-      projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma" , "Next-auth"],
-      projectLink: "https://github.com/hayzedd2/RoleBased-Auth/",
-    },
-    {
-      projectName: "My playground",
-      projectDescription:
-        "I try to create mini-web interactions with my free time. See this repo for some of them(Framer motion), documenting my interaction journey.",
-      projectSkills: ["Framer-motion", "Typescript"],
-      projectLink: "https://github.com/hayzedd2/My-playground/",
-    },
-    {
-      projectName: "Frontend Go-to template",
-      projectDescription:
-        "A nextjs Typescript application template for fast-setup of complex web apps. Comes with prisma setup for ORM, Complete setup of clerk auth for authentication , tailwind for styling",
-      projectSkills: ["Nextjs", "Typescript" , "Prisma" , "Clerk auth"],
-      projectLink: "https://github.com/hayzedd2/Goto-template/",
-    },
-    
-  ];
   return (
     <section>
       <div className="heading pt-8">
