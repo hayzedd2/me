@@ -52,7 +52,7 @@ const Contact = () => {
               </span>
 
               <a
-                key={index}
+                
                 className={`${hoveredIndex !== null && hoveredIndex !== index
                     ? "opacity-20"
                     : ""
