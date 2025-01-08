@@ -2,8 +2,8 @@ import React from "react";
 import { VscTriangleRight } from "react-icons/vsc";
 import { GoArrowUpRight } from "react-icons/go";
 import { projectArray } from "../contents/content";
+import Pill from "./Pill";
 const Projects = () => {
-  
   return (
     <section>
       <div className="heading pt-8">
