@@ -24,10 +24,10 @@ const About = () => {
             applications.
           </p>
           <p className="mt-4 leading-[30px]">
-            On the side, i am also interested in micro interactions.I
-            craft/recreate wonderful interactions on the web{" "}
+            On the side, i am also interested in micro interactions. I try to
+            craft/recreate wonderful interactions i see on the web
             <a
-              href="https://azplayground.vercel.app"
+              href="https://playground.alhameen.xyz"
               target="_blank"
               className="underline underline-offset-2"
             >
