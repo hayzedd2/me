@@ -22,7 +22,7 @@ const Projects = () => {
                 href={project.projectLink}
                 target="
             _blank"
-                className="text-[1.2rem]  text-gray-800 underline underline-offset-2 flex items-center"
+                className="text-[1.2rem]  w-max  text-gray-800 underline underline-offset-2 flex items-center"
               >
                 {project.projectName}
                 <GoArrowUpRight className="h-4 flex mt-[3px]" />
