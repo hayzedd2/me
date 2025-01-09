@@ -29,6 +29,7 @@ const Projects = () => {
               </a>
               <p className="xl:leading-[30px] sm:leading-[27px] max-w-[45rem] mt-2 xl:text-[1.07rem] sm:text-[1.05rem]">
                 {project.projectDescription}
+                {project.span && <Pill text={project.span} />}
               </p>
             </div>
           );

@@ -21,7 +21,7 @@ const Respositories = () => {
                 href={project.projectLink}
                 target="
             _blank"
-                className="text-[1.2rem]  text-gray-800 decoration-[#3a3a3a] underline underline-offset-2 flex items-center gap-[0.15rem]"
+                className="text-[1.2rem] w-max  text-gray-800 decoration-[#3a3a3a] underline underline-offset-2 flex items-center gap-[0.15rem]"
               > 
                 {project.projectName}
                 <GoArrowUpRight className="h-4 flex mt-[3px]" />

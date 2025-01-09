@@ -31,7 +31,7 @@ const About = () => {
               href="https://playground.alhameen.xyz"
               target="_blank"
             >
-              <Pill text="see my playground"/>
+              <Pill text="see my playground" link/>
             </a>
             
           </p>

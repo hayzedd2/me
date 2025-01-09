@@ -1,6 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { IoMail } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa6";
+import Pill from "../components/Pill";
 
 export const Links = [
   {
@@ -36,7 +37,8 @@ export const projectArray = [
   {
     projectName: "Snippet",
     projectDescription:
-      "A CLI tool for developers to save, retrieve and manage commonly used code snippets. Written in golang.",
+      "A CLI tool for developers to save, retrieve and manage commonly used code snippets. Written in",
+    span: "golang",
     projectLink: "https://github.com/hayzedd2/snippet-cli/",
   },
   {
@@ -57,23 +59,29 @@ export const projectArray = [
       "A portfolio I built for Habeeb, a product designer replicating his exact Figma design. It highlights his case studies, skills, experience, certifications, and more.",
     projectLink: "https://habeeb-azeez.vercel.app/",
   },
-  
 ];
 
 export const repositoryArray = [
   {
     projectName: "Role-Based auth",
     projectDescription:
-      "Advanced authentication system for a Nextjs app.A role-based access control system to ensure secure authorization. It includes sign-up and login functionality, O-auth, 2FA, email verification, password reset.",
-    projectSkills: ["Nextjs", "Typescript", "Supabase", "Prisma", "Next-auth"],
+      "An advanced authentication system for a Next.js app with role-based access control for secure authorization. Features include sign-up, login, OAuth, two-factor authentication (2FA), email verification, and password reset functionality.",
     projectLink: "https://github.com/hayzedd2/RoleBased-Auth/",
   },
   {
-    projectName: "Snippet",
-    projectDescription:
-      "A CLI tool for developers to save, retrieve and manage commonly used code snippets.",
+    projectName: "Structo",
+    projectDescription: (
+      <span>
+        Behind the scenes of{" "}
+        <a href="https://structo.alhameen.xyz/" target="_blank">
+          <Pill text="Structo" link />
+        </a>
+        - an application written in <Pill text="golang" /> to help parse
+        interfaces or structs and generate type-safe mock data.
+      </span>
+    ),
     projectSkills: ["Nextjs", "Typescript", "Prisma", "Clerk auth"],
-    projectLink: "https://github.com/hayzedd2/snippet-cli/",
+    projectLink: "https://github.com/hayzedd2/structo/",
   },
   {
     projectName: "My playground",
