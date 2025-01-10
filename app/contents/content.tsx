@@ -64,8 +64,15 @@ export const projectArray = [
 export const repositoryArray = [
   {
     projectName: "Role-Based auth",
-    projectDescription:
-      "An advanced authentication system for a Next.js app with role-based access control for secure authorization. Features include sign-up, login, OAuth, two-factor authentication (2FA), email verification, and password reset functionality.",
+    projectDescription: (
+      <span>
+        An <Pill text="advanced auth" /> system for a Next.js app with
+        role-based access control for secure authorization. Features include
+        sign-up, login, OAuth, two-factor authentication (2FA), email
+        verification, and password reset functionality.
+      </span>
+    ),
+
     projectLink: "https://github.com/hayzedd2/RoleBased-Auth/",
   },
   {
