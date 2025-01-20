@@ -72,7 +72,6 @@ export const repositoryArray = [
         verification, and password reset functionality.
       </span>
     ),
-
     projectLink: "https://github.com/hayzedd2/RoleBased-Auth/",
   },
   {
@@ -87,14 +86,32 @@ export const repositoryArray = [
         interfaces or structs and generate type-safe mock data.
       </span>
     ),
-    projectSkills: ["Nextjs", "Typescript", "Prisma", "Clerk auth"],
     projectLink: "https://github.com/hayzedd2/structo/",
   },
   {
-    projectName: "My playground",
-    projectDescription:
-      "I try to create mini-web interactions with my free time. See this repo for some of them(Framer motion), documenting my interaction journey.",
-    projectSkills: ["Framer-motion", "Typescript"],
+    projectName: "use-keys-bindings",
+    projectDescription: (
+      <span>
+        A <Pill text="smol" /> React package I built for handling keyboard
+        shortcuts — simple and easy to use.{" "}
+        <a
+          href="https://www.npmjs.com/package/use-keys-bindings"
+          target="_blank"
+        >
+          <Pill text="See it on npm" link />
+        </a>
+      </span>
+    ),
+    projectLink: "https://github.com/hayzedd2/use-keys-bindings",
+  },
+  {
+    projectName: "My-playground",
+    projectDescription: (
+      <span>
+        I try to create <Pill text="mini-web interactions" /> during my free time. See this repo for some of them (framer motion), documenting my interaction journey.
+       
+      </span>
+    ),
     projectLink: "https://github.com/hayzedd2/My-playground/",
   },
 ];
