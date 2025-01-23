@@ -45,7 +45,7 @@ export const projectArray = [
     projectName: "EventEase",
     projectDescription:
       "A web application for discovering and managing events with Google Calendar integration, allowing users to explore events near them and create their own events.",
-    projectLink: "https://eventsease.alhameen.xyz/",
+    projectLink: "https://eventease.alhameen.xyz/",
   },
   {
     projectName: "Structo",
