@@ -8,7 +8,7 @@ const Contact = () => {
   const ref = useRef<SVGSVGElement | null>(null);
   const isInView = useInView(ref, { once: false });
   const [hoveredIndex, setHoveredIndex] = useState<null | number>(null);
-  
+
   return (
     <section className="py-10 flex  items-center justify-between">
       <svg
@@ -39,31 +39,36 @@ const Contact = () => {
       <div className=" bg-white relative flex text-[0.95rem] font-[500] gap-[1.3rem] items-center justify-center">
         {Links.map((link, index) => {
           return (
-            <div key={index} className="flex flex-col gap-3 items-center justify-center">
+            <div
+              key={index}
+              className="flex flex-col gap-3 items-center justify-center"
+            >
               <span
                 style={{
                   backgroundColor: link.bg,
-                  rotate : link.tilt,
-    
+                  rotate: link.tilt,
                 }}
-                className={`transition-all ${link.bg} duration-300 ${hoveredIndex !== index ? "opacity-0 translate-y-1" : "opacity-100 translate-y-0"}  ease-in-out text-white p-3 rounded-[10px] bx-shadow text-[1.2rem]`}
+                className={`transition-all ${link.bg} duration-300 ${
+                  hoveredIndex !== index
+                    ? "opacity-0 translate-y-1"
+                    : "opacity-100 translate-y-0"
+                }  ease-in-out text-white p-3 rounded-[10px] bx-shadow text-[1.2rem]`}
               >
                 {link.icon}
               </span>
 
               <a
-                
-                className={`${hoveredIndex !== null && hoveredIndex !== index
+                className={`${
+                  hoveredIndex !== null && hoveredIndex !== index
                     ? "opacity-20"
                     : ""
-                  } transition-all duration-300 relative ease-in-out`}
+                } transition-all duration-300 relative ease-in-out`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 href={link.href}
                 target="_blank"
               >
                 {link.name}
-
               </a>
             </div>
           );

@@ -1,20 +1,21 @@
 import React from "react";
-import { Tangerine } from "next/font/google";
+import { Instrument_Serif, Tangerine } from "next/font/google";
 import Pill from "./Pill";
-const tangerine = Tangerine({
-  weight: "700",
+const instrument = Instrument_Serif({
+  weight: "400",
   display: "swap",
   subsets: ["latin"],
+  style: "italic"
 });
 const About = () => {
   return (
     <section>
       <div className="pt-10 mt-10">
         <div>
-          <h1 className={`text-[2.6rem] ${tangerine.className}`}>
+          <h1 className={`text-[2rem]  ${instrument.className}`}>
             Frontend engineer
           </h1>
-          <h6 className="text-[1.1rem]  opacity-70 mt-[-6px]">
+          <h6 className="text-[1rem] font-[500] mt-[px]">
             Azeez Alhameen
           </h6>
         </div>
