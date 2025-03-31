@@ -30,9 +30,28 @@ export const Links = [
 export const projectArray = [
   {
     projectName: "PicToPlate",
-    projectDescription:
-      "Allows you to snap or upload a photo of any dish to get instant recipes, cooking instructions, and expert answers about ingredients and techniques.",
+    projectDescription: (
+      <span>
+        An <Pill text="AI-powered culinary assistant" /> that helps you explore
+        food effortlessly. Snap or upload a dish photo, ask about any meal, and
+        receive instant recipes, step-by-step instructions, and expert insights
+        on ingredients and techniques. Supports follow-ups for a seamless
+        cooking experience.
+      </span>
+    ),
     projectLink: "https://pictoplate.alhameen.xyz/",
+  },
+  {
+    projectName: "Gather",
+    projectDescription: (
+      <span>
+        A <Pill text="visual form builder" /> for creating dynamic forms with
+        ease. Gather supports various field types, response collection, secure
+        submissions, powerful integrations (soon), advanced analytics and so
+        much more. It also allows exporting responses to diverse data formats.
+      </span>
+    ),
+    projectLink: "https://trygather.vercel.app/",
   },
   {
     projectName: "Snippet",
@@ -89,10 +108,27 @@ export const repositoryArray = [
     projectLink: "https://github.com/hayzedd2/structo/",
   },
   {
+    projectName: "Trace",
+    projectDescription: (
+      <span>
+        A <Pill text="lightweight" /> event tracking library for capturing user
+        interactions effortlessly. Trace supports unique event tracking and
+        seamless data synchronization.
+        <a
+          href="https://www.npmjs.com/package/trace-everything"
+          target="_blank"
+        >
+          <Pill text="See it on npm" link />
+        </a>
+      </span>
+    ),
+    projectLink: "https://github.com/hayzedd2/trace",
+  },
+  {
     projectName: "use-keys-bindings",
     projectDescription: (
       <span>
-        A <Pill text="smol" /> React package I built for handling keyboard
+        A <Pill text="simple" /> React package I built for handling keyboard
         shortcuts — simple and easy to use.{" "}
         <a
           href="https://www.npmjs.com/package/use-keys-bindings"
@@ -108,8 +144,9 @@ export const repositoryArray = [
     projectName: "My-playground",
     projectDescription: (
       <span>
-        I try to create <Pill text="mini-web interactions" /> during my free time. See this repo for some of them (framer motion), documenting my interaction journey.
-       
+        I try to create <Pill text="mini-web interactions" /> during my free
+        time. See this repo for some of them (framer motion), documenting my
+        interaction journey.
       </span>
     ),
     projectLink: "https://github.com/hayzedd2/My-playground/",

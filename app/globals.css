@@ -10,6 +10,7 @@
 .tag {
   @apply rounded-[5px] py-1 px-[0.5rem] font-[500] text-[#7457df] border-none mx-1 text-[0.85rem];
 }
+
 .tip {
   @apply rounded-[100px] px-[10px] py-[2px] bg-[#EAFCEC] text-[#313134] text-[0.6rem];
 }
