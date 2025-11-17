@@ -1,24 +1,66 @@
 "use client";
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 import { Links } from "../contents/content";
-
+import Pill from "./Pill";
+import { HeaderText } from "./header-text";
 const Contact = () => {
   const ref = useRef<SVGSVGElement | null>(null);
   const isInView = useInView(ref, { once: false });
   const [hoveredIndex, setHoveredIndex] = useState<null | number>(null);
 
   return (
-    <section className="py-10 flex  items-center justify-between">
+    <section className="py-10">
+      <HeaderText text="Connect"/>
+      <p>
+        You can contact me at{" "}
+        <a href="mailto:azeezalhameen1@gmail.com">
+          <Pill text="here" link />
+        </a>
+      </p>
+      <div className="flex gap-3 mt-3">
+        {Links.map((link, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col relative  gap-3 items-center justify-center"
+            >
+              <span
+                style={{
+                  backgroundColor: link.bg,
+                  rotate: link.tilt,
+                }}
+                className={`transition-all top-[-3.5rem] absolute ${link.bg} duration-300 ${
+                  hoveredIndex !== index
+                    ? "opacity-0 translate-y-1"
+                    : "opacity-100 translate-y-0"
+                }  ease-in-out text-white p-3 rounded-[10px] text-[1.2rem]`}
+              >
+                {link.icon}
+              </span>
+
+              <a
+                className={`${
+                  hoveredIndex !== null && hoveredIndex !== index
+                    ? "opacity-20"
+                    : ""
+                } transition-all px-[14px] h-[28px] flex items-center justify-center rounded-[2rem] bg-[#fafafa] duration-300 relative ease-in-out`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                href={link.href}
+                target="_blank"
+              >
+                <span className="pt-[0.5px] text-sm font-medium">
+                  {link.name}
+                </span>
+              </a>
+            </div>
+          );
+        })}
+      </div>
       <svg
         ref={ref}
-        xmlns="http://www.w3.org/2000/svg"
-        width="170"
-        className="mt-[-20px]"
-        height="170"
-        viewBox="0 0 437 202"
-        fill="none"
+        width="91" height="47" className="mt-[20px]" viewBox="0 0 91 47" fill="none" xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
           initial={{
@@ -30,50 +72,9 @@ const Contact = () => {
           transition={{
             duration: 1.3,
           }}
-          d="M1.79999 33.0001C2.81344 30.1851 4.37108 28.2418 6.55558 26.1112C15.1049 17.7729 26.8342 7.24687 39.2222 5.71117C49.0362 4.49455 59.4809 10.313 65.9333 17.2223C80.4497 32.7663 81.1844 58.4848 79.6667 78.4223C77.9936 100.401 71.8369 121.791 65.4444 142.778C60.5304 158.911 56.307 175.841 48.8222 191.044C48.4893 191.721 43.7835 202.018 41.8445 200.2C40.2635 198.718 40.5281 194.311 40.5556 192.645C40.718 182.774 42.175 172.825 43.6222 163.089C49.5317 123.334 58.9961 83.0669 73 45.3556C77.1374 34.2139 82.0096 23.4485 88.4667 13.4445C89.9219 11.19 95.2792 1.31748 99.4 2.06672C103.565 2.82398 104.437 14.0005 104.822 16.6445C107.714 36.4896 107.236 56.8284 108.2 76.8223C108.915 91.6656 110.439 106.363 113.044 121C114.609 129.789 116.03 142.37 123 149C134.174 159.629 154.082 101.325 156.111 95.1334C157.927 89.592 159.583 83.9918 161.311 78.4223C162.614 74.2229 161.437 82.3951 161.4 82.9112C160.737 92.1995 160.682 114.507 175.4 112.911C190.782 111.243 202.019 92.781 212.067 82.7334C216.378 78.4222 217.568 99.6775 217.8 102.422C219.508 122.63 222.269 150.315 209.622 167.889C196.461 186.178 175.006 192.502 153.889 196.378C146.778 197.683 135.672 199.795 128.644 196.6C125.864 195.336 132.942 192.079 134.244 190.956C139.923 186.06 145.237 181.42 151.756 177.622C194.072 152.968 239.934 131.615 276.022 97.8001C278.913 95.0913 281.71 92.2897 284.511 89.489C284.697 89.3029 286.742 87.1421 286.867 87.2667C288.502 88.9023 276.743 113.335 275.578 116.645C273.899 121.413 271.297 129.042 273.489 134.156C276.748 141.76 298.661 126.366 301.889 123.756C311.587 115.912 319.725 105.388 326.956 95.3112C328.747 92.8151 344.829 66.8513 335.044 66.3779C320.388 65.6687 333.786 116.417 344.822 121.178C368.583 131.428 384.971 93.6526 388.467 76.7334C389.519 71.6407 390.442 66.392 390.6 61.1778C390.653 59.4162 391.64 64.5463 392.111 66.2445C395.126 77.1105 399.024 104.535 413 107.889C424.726 110.703 430.241 87.6457 430.6 79.9334C430.672 78.3851 430.493 75.1126 430.244 79.0889C429.756 86.9005 430.486 95.1197 431.444 102.867C432.4 110.588 435.4 118.86 435.4 126.6"
-          stroke="black"
-          strokeWidth="3"
-          strokeLinecap="round"
+          d="M1.00027 8.02632C1.20829 7.38781 1.52801 6.94701 1.9764 6.46374C3.73122 4.57239 6.13876 2.18479 8.6815 1.83645C10.6959 1.56049 12.8398 2.88027 14.1642 4.44749C17.1438 7.9733 17.2946 13.807 16.9831 18.3293C16.6396 23.3147 15.3759 28.1666 14.0638 32.9269C13.0552 36.5863 12.1883 40.4266 10.652 43.8752C10.5836 44.0286 9.61773 46.3642 9.21973 45.9519C8.89522 45.6157 8.94955 44.616 8.95518 44.2381C8.98853 41.9993 9.28758 39.7424 9.58463 37.5341C10.7976 28.5165 12.7403 19.3829 15.6147 10.8289C16.4639 8.30166 17.464 5.85976 18.7893 3.59059C19.088 3.0792 20.1876 0.839842 21.0335 1.00979C21.8884 1.18156 22.0674 3.71671 22.1464 4.31643C22.7399 8.81784 22.642 13.4313 22.8398 17.9664C22.9866 21.3333 23.2993 24.6672 23.8341 27.9871C24.1553 29.9808 24.447 32.8345 25.8776 34.3383C28.1711 36.7492 32.2575 23.5242 32.6739 22.1199C33.0466 20.8629 33.3865 19.5927 33.7413 18.3293C34.0088 17.3768 33.7671 19.2305 33.7595 19.3475C33.6233 21.4544 33.6121 26.5144 36.6331 26.1524C39.7903 25.774 42.0969 21.5863 44.1593 19.3072C45.0442 18.3293 45.2885 23.1506 45.3361 23.7732C45.6866 28.3568 46.2533 34.6366 43.6575 38.6228C40.956 42.7714 36.5523 44.2057 32.2178 45.0849C30.7582 45.381 28.4787 45.8599 27.0362 45.1353C26.4654 44.8486 27.9182 44.1098 28.1856 43.855C29.3511 42.7446 30.4419 41.692 31.7799 40.8306C40.4658 35.2384 49.8793 30.3949 57.2867 22.7247C57.88 22.1103 58.4542 21.4749 59.0291 20.8396C59.0673 20.7973 59.487 20.3072 59.5126 20.3355C59.8483 20.7065 57.4345 26.2486 57.1954 26.9992C56.8509 28.0809 56.3169 29.8113 56.7667 30.9712C57.4356 32.696 61.9334 29.2043 62.596 28.6122C64.5866 26.8331 66.257 24.4459 67.7411 22.1602C68.1088 21.594 71.4098 15.7047 69.4015 15.5973C66.3931 15.4365 69.1431 26.9476 71.4084 28.0275C76.2856 30.3524 79.6493 21.784 80.3668 17.9462C80.5828 16.7911 80.7723 15.6005 80.8047 14.4178C80.8157 14.0182 81.0181 15.1819 81.1149 15.5671C81.7338 18.0318 82.5339 24.2524 85.4025 25.0132C87.8093 25.6515 88.9414 20.4214 89.015 18.6721C89.0298 18.3209 88.9931 17.5786 88.942 18.4806C88.8418 20.2524 88.9916 22.1168 89.1884 23.874C89.3844 25.6254 90.0003 27.5017 90.0003 29.2574" stroke="#3A3A3A" stroke-width="2" stroke-linecap="round"
         />
       </svg>
-      <div className=" bg-white relative flex text-[0.95rem] font-[500] gap-[1.3rem] items-center justify-center">
-        {Links.map((link, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col gap-3 items-center justify-center"
-            >
-              <span
-                style={{
-                  backgroundColor: link.bg,
-                  rotate: link.tilt,
-                }}
-                className={`transition-all ${link.bg} duration-300 ${
-                  hoveredIndex !== index
-                    ? "opacity-0 translate-y-1"
-                    : "opacity-100 translate-y-0"
-                }  ease-in-out text-white p-3 rounded-[10px] bx-shadow text-[1.2rem]`}
-              >
-                {link.icon}
-              </span>
-
-              <a
-                className={`${
-                  hoveredIndex !== null && hoveredIndex !== index
-                    ? "opacity-20"
-                    : ""
-                } transition-all duration-300 relative ease-in-out`}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                href={link.href}
-                target="_blank"
-              >
-                {link.name}
-              </a>
-            </div>
-          );
-        })}
-      </div>
     </section>
   );
 };

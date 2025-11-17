@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { Newsreader } from "next/font/google";
+import { PT_Serif } from "next/font/google";
 
-const newsreader = Newsreader({subsets : ["latin"]})
+const pt_serif = PT_Serif({subsets : ["latin"], weight:["400", "700"]})
 
 export const metadata: Metadata = {
   title: "Alhameen",
   description:
     "Frontend engineer",
   metadataBase: new URL("https://alhameen.xyz"),
+  icons:{
+    icon:"/me.webp",
+    apple:"/me.webp"
+  },
   openGraph: {
     title: "Alhameen",
     description:
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-img.png",
+        url: "https://alhameen.xyz/og.png",
         width: 1200,
         height: 630,
         alt: "Alhameen - Frontend engineer",
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alhameen",
     description: "Frontend engineer",
-    images: ["/og-img.png"],
+    images: ["https://alhameen.xyz/og.png"],
     creator: "@xylogeist_",
   },
   keywords: ["portfolio", "frontend", "engineer", "alhameen", "azeez"],
@@ -43,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={newsreader.className}>
+      <body className={pt_serif.className}>
         {children}
         <Analytics />
       </body>
