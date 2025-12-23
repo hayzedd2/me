@@ -1,23 +1,18 @@
 import React from "react";
 import Pill from "./Pill";
-import { HeaderText } from "./header-text";
 
 
 const About = () => {
   return (
     <section>
-      <div className="pt-5">
-        <div>
-        <HeaderText text="Alhameen Azeez"/>
-          <h6 className="text-[1rem] font-[500] mt-[px]">Web engineer</h6>
-        </div>
-        <div className="xl:max-w-[35rem]  sm:max-w-none mt-[16px] xl:leading-[30px] sm:leading-[27px] xl:text-[1.02rem] sm:text-[1.05rem]  ">
-          <p className="leading-[30px] text-[15px]">
-            Hi there, I’m <Pill text="Alhameen" />. I’m a{" "}
-            <span className="relative line-through  mr-1">
+      <div >
+        <div className="xl:max-w-[35rem] sm:max-w-none mt-[16px] flex flex-col gap-3">
+          <p className="leading-7 text-[15px]">
+            Hey, I’m <Pill text="Alhameen" />. I’m a{" "}
+            <span className="relative line-through   mr-1">
               frontend{" "}
-              <span className="absolute top-[-1.5rem] text-purple-600 rotate-[-4deg] left-0">
-                web
+              <span className="absolute top-[-1.5rem] text-purple-600  left-0">
+                <Pill text="Software" />
               </span>
             </span>
             engineer interested in building smooth and seamless web experiences.
@@ -25,13 +20,13 @@ const About = () => {
             of how the web works.
           </p>
 
-          <p className="mt-2 leading-[30px] text-[15px]">
+          <p className="leading-7 text-[15px]">
             I enjoy building dev tools —there&apos;s something satisfying about
             making everyone&apos;s workflow smoother. Whenever I solve a problem
             that could save another developer time or frustration, I try to
             build my solution into a tool.
           </p>
-          <p className="mt-4 leading-[30px] text-[15px]">
+          <p className="leading-7 text-[15px]">
             On the side, i am also interested in{" "}
             <Pill text="micro interactions" />. I try to craft/recreate
             wonderful interactions i see on the web
