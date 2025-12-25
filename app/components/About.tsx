@@ -11,13 +11,13 @@ const About = () => {
             Hey, I’m <Pill text="Alhameen" />. I’m a{" "}
             <span className="relative line-through   mr-1">
               frontend{" "}
-              <span className="absolute top-[-1.5rem] text-purple-600  left-0">
+              <span className="absolute top-[-1.5rem] text-purple-600  left-[-5px]">
                 <Pill text="Software" />
               </span>
             </span>
-            engineer interested in building smooth and seamless web experiences.
-            While I focus on frontend, I’m also interested in the bigger picture
-            of how the web works.
+            engineer interested in building performant, scalable web applications.
+            While most of my time is spent on frontend, I&apos;m just as comfortable 
+            architecting and building scalable backend applications.
           </p>
 
           <p className="leading-7 text-[15px]">
@@ -27,13 +27,12 @@ const About = () => {
             build my solution into a tool.
           </p>
           <p className="leading-7 text-[15px]">
-            On the side, i am also interested in{" "}
-            <Pill text="micro interactions" />. I try to craft/recreate
-            wonderful interactions i see on the web
-            <a href="https://playground.alhameen.xyz" target="_blank">
-              <Pill text="see my playground" link />
-            </a>
-          </p>
+             Beyond functionality, I&apos;m also invested in the craft of interaction design.
+             I study and recreate compelling interactions I encounter on the web in{" "}
+             <a href="https://playground.alhameen.xyz" target="_blank">
+               <Pill text="my playground" link />
+             </a>
+           </p>
         </div>
       </div>
     </section>

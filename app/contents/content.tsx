@@ -21,6 +21,21 @@ export const Links = [
 
 export const projects = [
   {
+    projectName: "Scaffold",
+    projectDescription: (
+      <span>
+        A <Pill text="simple tool" /> for quickly sharing code samples and project templates with proper context:
+      </span>
+    ),
+    listItems: [
+      "Create file trees and add code snippets easily",
+      "Share via a single link for quick collaboration",
+      "Perfect for code reviews, bug reports, and boilerplates",
+      "Built for developers who need to share code context quickly",
+    ],
+    projectLink: "https://scaffold.alhameen.xyz/",
+  },
+  {
     projectName: "Gather",
     projectDescription: (
       <span>
@@ -47,7 +62,9 @@ export const projects = [
     listItems: [
       "Quick snippet storage and retrieval from the command line",
       "Organized code management with tags and categories",
-      <span key={"third"}>Written in <Pill text="golang"/></span>,
+      <span key={"third"}>
+        Written in <Pill text="golang" />
+      </span>,
     ],
     projectLink: "https://github.com/hayzedd2/snippet-cli/",
   },
@@ -55,14 +72,20 @@ export const projects = [
     projectName: "Structo",
     projectDescription: (
       <span>
-        A <Pill text="opensource" /> tool that helps generate realistic mock data:
+        A <Pill text="opensource" /> tool that helps generate realistic mock
+        data:
       </span>
     ),
     listItems: [
       "Analyzes TypeScript interfaces or Go structs",
       "Ensures type safety in testing environments",
       "Generates realistic test data automatically",
-        <span key={"third"}>Parser and generator written in <a href="https://github.com/hayzedd2/structo/"><Pill text="go" link/></a></span>,
+      <span key={"third"}>
+        Parser and generator written in{" "}
+        <a href="https://github.com/hayzedd2/structo/">
+          <Pill text="go" link />
+        </a>
+      </span>,
     ],
     projectLink: "https://structo.alhameen.xyz/",
   },
@@ -112,7 +135,7 @@ export const repositoryArray = [
     ),
     projectLink: "https://github.com/hayzedd2/trace",
   },
- 
+
   {
     projectName: "My-playground",
     projectDescription: (
