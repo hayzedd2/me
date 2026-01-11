@@ -33,7 +33,7 @@ export const projects = [
       "Perfect for code reviews, bug reports, and boilerplates",
       "Built for developers who need to share code context quickly",
     ],
-    projectLink: "https://scaffold.alhameen.xyz/",
+    projectLink: "https://scaffold.alhameen.site/",
   },
   {
     projectName: "Gather",
@@ -87,7 +87,7 @@ export const projects = [
         </a>
       </span>,
     ],
-    projectLink: "https://structo.alhameen.xyz/",
+    projectLink: "https://github.com/hayzedd2/structo/",
   },
 ];
 

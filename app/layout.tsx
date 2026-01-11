@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Alhameen",
   description:
     "Frontend engineer",
-  metadataBase: new URL("https://alhameen.xyz"),
+  metadataBase: new URL("https://alhameen.site"),
   icons:{
     icon:"/me.webp",
     apple:"/me.webp"
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     description:
       "Frontend engineer",
     type: "website",
-    url: "https://alhameen.xyz",
+    url: "https://alhameen.site",
     siteName: "Alhameen",
     locale: "en_US",
     images: [
       {
-        url: "https://alhameen.xyz/og.png",
+        url: "https://alhameen.site/og.png",
         width: 1200,
         height: 630,
         alt: "Alhameen - Frontend engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Alhameen",
     description: "Frontend engineer",
-    images: ["https://alhameen.xyz/og.png"],
+    images: ["https://alhameen.site/og.png"],
     creator: "@xylogeist_",
   },
   keywords: ["portfolio", "frontend", "engineer", "alhameen", "azeez"],

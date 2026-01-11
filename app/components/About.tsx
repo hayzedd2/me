@@ -29,7 +29,7 @@ const About = () => {
           <p className="leading-7 text-[15px]">
              Beyond functionality, I&apos;m also invested in the craft of interaction design.
              I study and recreate compelling interactions I encounter on the web in{" "}
-             <a href="https://playground.alhameen.xyz" target="_blank">
+             <a href="https://playground.alhameen.site" target="_blank">
                <Pill text="my playground" link />
              </a>
            </p>
